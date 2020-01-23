@@ -40,7 +40,7 @@ function watchScss() {
 }
 
 function javascript(done) {
-    gulp.src("./src/javascript/**/*.js")
+    gulp.src("./src/Javascript/**/*.js")
         .pipe(babel({
             presets: ["@babel/env"]
         }))
