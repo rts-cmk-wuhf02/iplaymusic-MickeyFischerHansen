@@ -1,0 +1,119 @@
+.section__h1{
+    background: -webkit-radial-gradient(#FF6A00,#EE0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 5%;
+  font-size: 2em;
+}
+
+.section__p-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__p{
+    color: white;
+}
+
+.section__p2{
+    color: #FF1168;
+}
+
+.section__img{
+    position: relative;
+    width: 32%;
+    height: 100%;
+}
+
+.figure__h3{
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    font-size: 15px;
+    color: white;
+}
+
+.figure__h2{
+    position: absolute;
+    right: 50%;
+    top: 60%;
+    font-size: 20px;
+    color: #FF1168;
+    font-weight: bold;
+}
+
+.img__wrapper{
+    width: 100%;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.img__1{
+    border-radius: 50%;
+    margin: auto;
+    width: 4em;
+    height: 4em;
+}
+.green{
+    width: 155px;
+    height: 155px;
+    background: -webkit-linear-gradient(#3A7634,#5EB11C);
+    -webkit-background-clip: content-box;
+    border-radius: 0.3em;
+}
+.blue{
+    width: 155px;
+    height: 155px;
+    background: -webkit-linear-gradient(#115793,#00A1CB);
+    -webkit-background-clip: content-box;;
+    margin-bottom: 50px;
+    border-radius: 0.3em;
+    
+    
+    
+}
+
+.img__wrapper2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
+    position: relative;
+  }
+
+  figure{
+      margin: 0px;
+  }
+
+  figcaption{
+      color: white;
+      font-size: 15px;
+  }
+
+  .div__wrapper{
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      margin: auto;
+
+  }
+
+  .blue__div-h2{
+      font-weight: bold;
+      color: white;
+      
+  }
+
+  .green__div-h2{
+    font-weight: bold;
+    color: white;
+   
+    
+}
+
+.div-p{
+    color: white;
+}

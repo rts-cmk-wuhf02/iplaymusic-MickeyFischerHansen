@@ -1,0 +1,112 @@
+p{
+    margin: 0px;
+}
+
+h3{
+    margin: 0px;
+}
+
+.section__wrapper{
+    width: 90%;
+    margin: auto;
+    
+}
+
+.article__section{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 0.5em;
+}
+
+.section__img{
+    width: 3em;
+    height: 3em;
+}
+
+.section__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section__div-h3{
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.section__div-p2{
+    display: flex;
+    align-items: center;
+}
+
+.section__img{
+    position: relative;
+    width: 32%;
+    height: 100%;
+}
+
+.figure__h3{
+    position: absolute;
+    right: 50%;
+    top: 20%;
+    font-size: 15px;
+    color: white;
+}
+
+.figure__h2{
+    position: absolute;
+    right: 40%;
+    top: 25%;
+    font-size: 20px;
+    color: #FF1168;
+    font-weight: bold;
+}
+
+.img__wrapper{
+    width: 100%;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.img__1{
+    border-radius: 50%;
+    margin: auto;
+    width: 4em;
+    height: 4em;
+}
+
+.section__wrapper-album{
+    width: 90%;
+    margin: auto;
+}
+.article__section-album{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 0.5em;
+}
+.section__img-album{
+    width: 4em;
+    height: 4em;
+}
+.section__div-album{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.section__div-h3-album{
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.section__div-p2-album{
+    display: flex;
+    align-items: center;
+}
+
+
+
