@@ -1,7 +1,44 @@
 .categories{
     width: 325px;
     height: 54px;
-    background-color: red;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.categoriesAlternative{
+    background-color: #D70060;
+}
+.categoriesBlues{
+    background-color: #E54028;
+}
+.categoriesClassical{
+    background-color: #F18D05;
+}
+.categoriesCountry{
+    background-color: #F2BC06;
+}
+.categoriesDance{
+    background-color: #5EB11C;
+}
+.categoriesElectronic{
+    background-color: #3A7634;
+}
+.categoriesFitness{
+    background-color: #0ABEBE;
+}
+.categoriesHiphop{
+    background-color: #0ABEBE;
+}
+.categoriesIndustrial{
+    background-color: #115793;
+}
+.categories-show{
+    visibility: visible;
+    width: 325px;
+    height: 54px;
     margin-top: 10px;
     border-radius: 10px;
     margin: auto;
@@ -19,4 +56,7 @@
     color: #FFFFFF;
     margin-top: 5px;
     margin-right: 20px;
+}
+.active{
+    visibility: hidden;
 }
