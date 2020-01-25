@@ -3,9 +3,7 @@
 <%- include('../partials/nav'); %>
 <main>
     <figure class="img__wrapper">
-        <img class="section__img" src="/assets/images/pexels-photo-1435457.png" alt="">
-        <img class="section__img" src="/assets/images/pexels-photo-1988681.png" alt="">
-        <img class="section__img" src="/assets/images/pexels-photo-1816943.png" alt="">
+       
        
   
         <h3 class="figure__h3">September</h3>
@@ -13,51 +11,33 @@
     </figure>
     
     <article class="section__wrapper">
-        <section class="article__section">
-            <a href="/albums-details">
-
-                <img class="section__img" src="/assets/images/feature1.jpg" alt="">
-            </a>
-            
-           <div class="section__div">
-                <h3 class="section__div-h3">bhh</h3>
-                <p class="section__div-p">jnf</p>
-           </div>
-            <p class="section__div-p2">12 songs</p>
-            
-        </section>
-
-        <section class="article__section">
-            <img class="section__img" src="/assets/images/feature1.jpg" alt="">
-           <div class="section__div">
-                <h3 class="section__div-h3">bhh</h3>
-                <p class="section__div-p">jnf</p>
-           </div>
-            <p class="section__div-p2">12 songs</p>
-        </section>
-
-        <section class="article__section">
-            <img class="section__img" src="/assets/images/feature1.jpg" alt="">
-           <div class="section__div">
-                <h3 class="section__div-h3">bhh</h3>
-                <p class="section__div-p">jnf</p>
-           </div>
-            <p class="section__div-p2">12 songs</p>
-        </section>
-
-        <section class="article__section">
-            <img class="section__img" src="/assets/images/feature1.jpg" alt="">
-           <div class="section__div">
-                <h3 class="section__div-h3">bhh</h3>
-                <p class="section__div-p">jnf</p>
-           </div>
-            <p class="section__div-p2">12 songs</p>
-        </section>
-       
+      
         
     </article>
 
 </main>
+<template id="template-feature">
+       
+    <img class="section__img" src="" alt="">
+   
 
-<%- include('../partials/footer'); %>
+   
+
+    <h3 class="figure__h3"></h3>
+    <h2 class="figure__h2"></h2>
+</template>
+
+<template id="album-play">
+    <section class="article__section">
+        <img class="play__img" src="" alt="">
+       <div class="section__div">
+            <h3 class="section__div-h3">bhh</h3>
+            <p class="section__div-p">jnf</p>
+       </div>
+        <p class="section__div-p2">12 songs</p>
+    </section>
+
+</template>
+
+<%- include('../partials/albums-footer'); %>
 <%- include('../partials/after-footer'); %>

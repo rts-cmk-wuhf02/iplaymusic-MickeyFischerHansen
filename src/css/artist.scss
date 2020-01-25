@@ -20,9 +20,7 @@
 }
 
 .section__img{
-    position: relative;
-    width: 32%;
-    height: 100%;
+    width: 300px;
 }
 
 .figure__h3{
@@ -43,12 +41,13 @@
 }
 
 .img__wrapper{
-    width: 100%;
     height: 200px;
-    overflow-y: scroll;
-    overflow-x:hidden;
+    width: 100%;
     display: flex;
     justify-content: center;
+    overflow-y: scroll;
+    direction: ltr;
+    margin: auto;
 }
 
 .img__1{
@@ -57,6 +56,7 @@
     width: 4em;
     height: 4em;
 }
+
 .green{
     width: 155px;
     height: 155px;
@@ -64,16 +64,14 @@
     -webkit-background-clip: content-box;
     border-radius: 0.3em;
 }
+
 .blue{
     width: 155px;
     height: 155px;
     background: -webkit-linear-gradient(#115793,#00A1CB);
     -webkit-background-clip: content-box;;
     margin-bottom: 50px;
-    border-radius: 0.3em;
-    
-    
-    
+    border-radius: 0.3em;  
 }
 
 .img__wrapper2{

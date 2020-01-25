@@ -15,7 +15,7 @@ fetch('https://accounts.spotify.com/api/token', {
   return response.json();
 }).then(function (data) {
   var accessToken = data.access_token;
-  fetch('https://api.spotify.com/v1/artists?ids=0oSGxfWSnnOXhD2fKuz2Gy,3dBVyJ7JuOMt4GE9607Qin', {
+  fetch('https://api.spotify.com/v1/albums/?ids=41MnTivkwTO3UUJ8DrqEJJ,6JWc4iAiJ9FjyK0B59ABb4,6UXCm6bOO4gFlDQZV5yL37', {
     method: "GET",
     headers: {
       "Authorization": "Bearer " + accessToken
@@ -23,28 +23,31 @@ fetch('https://accounts.spotify.com/api/token', {
   }).then(function (res) {
     return res.json();
   }).then(function (req) {
-    console.log(req.artists);
-    req.artists.forEach(function (element) {
+    console.log(req.albums);
+    req.albums.forEach(function (element) {
       console.log(element.images);
       var templatefeature = document.querySelector('#template-feature');
       var placer = document.querySelector('.img__wrapper');
       var clone = templatefeature.content.cloneNode(true);
       clone.querySelector('.section__img').src = element.images[0].url;
       placer.appendChild(clone);
-    }); //    const featuredmain = document.querySelector('.featuredmain')
-    //    featuredmain.innerHTML = `
-    //    <section class="main_section">
-    //      <h1 class="section__h1">Featured</h1>
-    //  <figure class="img__wrapper">
-    //  <img class="section__img" src="${req.playlists.items[0].images[0].url}" alt="">
-    //      <h1 class="img__h1">${req.playlists.items[0].name}</h1>
-    //      <h3 class="img__h3">Soundtrack</h3>
-    //  </figure>
-    //  </section>
-    //    `
-    // req.playlists.forEach(element => {
-    //     console.log(element)
-    //     element.forEach(item=>{
-    //         console.log(item)
+    });
+  });
+  fetch('https://api.spotify.com/v1/browse/new-releases?country=SE', {
+    method: "GET",
+    headers: {
+      "Authorization": "Bearer " + accessToken
+    }
+  }).then(function (res) {
+    return res.json();
+  }).then(function (req) {
+    console.log(req.albums.items[0]);
+    req.albums.items.forEach(function (element) {
+      var templatealbums = document.querySelector('#album-play');
+      var placer2 = document.querySelector('.section__wrapper');
+      var clone = templatealbums.content.cloneNode(true);
+      clone.querySelector('.play__img').src = element.images[0].url;
+      placer2.appendChild(clone);
+    });
   });
 });

@@ -18,7 +18,7 @@ fetch('https://accounts.spotify.com/api/token', {
 
     .then(data=>{
         let accessToken = data.access_token
-        fetch('https://api.spotify.com/v1/artists?ids=0oSGxfWSnnOXhD2fKuz2Gy,3dBVyJ7JuOMt4GE9607Qin',{
+        fetch('https://api.spotify.com/v1/browse/featured-playlists',{
             method: "GET",
             headers: {
                 "Authorization" : "Bearer " + accessToken
@@ -26,19 +26,16 @@ fetch('https://accounts.spotify.com/api/token', {
         })
         .then(res=> res.json())
         .then(req=>{
-          console.log(req.artists) 
-          req.artists.forEach(element => {
+          console.log(req.playlists.items) 
+          req.playlists.items.forEach(element => {
               console.log(element.images)
               const templatefeature = document.querySelector('#template-feature');
-              const placer = document.querySelector('.img__wrapper');
+              const placer = document.querySelector('.main_section');
               const clone = templatefeature.content.cloneNode(true)
                 clone.querySelector('.section__img').src = element.images[0].url
                 placer.appendChild(clone)
             
-            
           });
-
-          
         //    const featuredmain = document.querySelector('.featuredmain')
           
         //    featuredmain.innerHTML = `
@@ -59,7 +56,15 @@ fetch('https://accounts.spotify.com/api/token', {
            //         console.log(item)
                 })
             });
+ 
+        
 
-            
-                
-            
+           //req.playlists.forEach(element => {
+            //   console.log(element)
+            //   element.forEach(item=>{
+            //       console.log(item)
+              
+        
+           
+    
+        
