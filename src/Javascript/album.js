@@ -49,6 +49,9 @@ fetch('https://accounts.spotify.com/api/token', {
                             const placer2 = document.querySelector('.section__wrapper');
                             const clone = templatealbums.content.cloneNode(true)
                               clone.querySelector('.play__img').src = element.images[0].url
+                              clone.querySelector(".section__div-h3").innerText = element.name;
+                              clone.querySelector(".section__div-p").innerText = element.artists[0].name;
+                              clone.querySelector(".section__div-p2").innerText = element.total_tracks;
                               placer2.appendChild(clone)
                   });
                 });

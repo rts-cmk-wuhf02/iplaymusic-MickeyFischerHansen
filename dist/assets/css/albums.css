@@ -55,6 +55,19 @@ h3 {
   display: flex;
   overflow-y: scroll; }
 
+.section__p-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em; }
+
+.section__p {
+  color: white;
+  font-weight: bold; }
+
+.section__p2 {
+  color: #FF1168;
+  font-weight: lighter; }
+
 .play__img {
   height: 4em; }
 

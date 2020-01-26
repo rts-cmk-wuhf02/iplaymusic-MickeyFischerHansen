@@ -52,7 +52,7 @@
 
 .img__1{
     border-radius: 50%;
-    margin: auto;
+    margin: 0.455em;
     width: 4em;
     height: 4em;
 }
@@ -76,8 +76,9 @@
 
 .img__wrapper2{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
+    overflow-y: scroll;
     margin: auto;
     position: relative;
   }
