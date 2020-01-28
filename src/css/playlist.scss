@@ -1,5 +1,4 @@
 .main__section{
-    background-color: #341931;
     background-image: url("./../images/sound-wave.png");
     background-position: top;
     background-attachment: fixed;
@@ -54,16 +53,16 @@
     margin: 0.5em;
     height: 4em;
 }
-.section__img-album{
+.section__img{
     width: 4em;
     height: 4em;
     border-radius: 50%;
 }
 .section__div-album{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    color: white;
 }
 .section__div-h3-album{
     font-weight: bold;

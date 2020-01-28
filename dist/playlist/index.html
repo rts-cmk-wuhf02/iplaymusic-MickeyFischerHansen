@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark-mode">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,60 +27,47 @@
         <h1 class="main__section__h1">Playlist</h1>
 
         <section class="section__section">
-            <img class="img__section" src="/assets/images/pexels-photo-442540.png" alt="">
-            <img class="img__section" src="/assets/images/photo-1545224144-b38cd309ef69.png" alt="">
-            <img class="img__section" src="/assets/images/pexels-photo-949274.png" alt="">
+           
         </section>
 
         <div  class="div__wrapper">
-            <h2 class="div__h2">top 50</h2>
-            <h2 class="div__h2">Rock Ballads</h2>
+           
         </div>
 
     </section>
 
     <article class="section__wrapper-album">
-        <section class="article__section-album">
-            <a href="">
-
-                <img class="section__img-album" src="/assets/images/feature1.jpg" alt="">
-            </a>
-           <div class="section__div-album">
-                <h3 class="section__div-h3-album">bhh</h3>
-                <p class="section__div-p-album">jnf</p>
-           </div>
-            <p class="section__div-p2-album">12 songs</p>
-        </section>
-        <section class="article__section-album">
-            <img class="section__img-album" src="/assets/images/feature1.jpg" alt="">
-           <div class="section__div-album">
-                <h3 class="section__div-h3-album">bhh</h3>
-                <p class="section__div-p-album">jnf</p>
-           </div>
-            <p class="section__div-p2-album">12 songs</p>
-        </section>
-        <section class="article__section-album">
-            <img class="section__img-album" src="/assets/images/feature1.jpg" alt="">
-           <div class="section__div">
-                <h3 class="section__div-h3-album">bhh</h3>
-                <p class="section__div-p-album">jnf</p>
-           </div>
-            <p class="section__div-p2-album">12 songs</p>
-        </section>
-        <section class="article__section-album">
-            <img class="section__img-album" src="/assets/images/feature1.jpg" alt="">
-           <div class="section__div">
-                <h3 class="section__div-h3-album">bhh</h3>
-                <p class="section__div-p-album">jnf</p>
-           </div>
-            <p class="section__div-p2-album">12 songs</p>
-        </section>
+       
+        </article>
         <div class="button__wrapper">
         <button class="button">
             Listen all
         </button>
     </div>
 </main>
+<template id="playlists-template">
+    <img class="img__section" src="" alt="">
+   
+</template>
+
+<template id="featured-playlists">
+   
+        
+       <div class="section__div-album">
+        <a href="">
+    
+            <img class="section__img" src="" alt="">
+        </a>
+            <h3 class="section__div-h3-album">bhh</h3>
+            <p class="section__div-p-album">jnf</p>
+            <p class="section__div-p2-album"></p>
+       </div>
+       
+    
+    </template>
+    
+
+
 
 
 <footer>
@@ -87,9 +75,10 @@
     <a href="/albums"><i class="fas fa-microphone-alt"></i></a>
 
     <a href="/index.html"><i class="fas fa-music"></i> </a>
-   <a href="/categories"><i class="fas fa-adjust"></i></a>
+    <i class="fas fa-adjust" id="lightdark" onclick="toggleDarkLight()"></i>
     <a href="/playlist"><i class="fas fa-cog"></i></a>
-    <script src="/assets/Javascript/featured.js"></script>
+    <script src="/assets/Javascript/playlist.js"></script>
+    <script src="/assets/Javascript/lightdark.js"></script>
 </footer>
 </body>
 </html>

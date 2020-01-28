@@ -1,2 +1,33 @@
-body {
-  background-color: turquoise; }
+.dark-mode {
+  background-color: #341931; }
+  .dark-mode p {
+    color: #FFFFFF; }
+  .dark-mode h1 {
+    color: #FFFFFF; }
+  .dark-mode h2 {
+    color: #FFFFFF; }
+  .dark-mode h3 {
+    color: #FFFFFF; }
+  .dark-mode h4 {
+    color: #FFFFFF; }
+  .dark-mode figcaption {
+    color: #FFFFFF; }
+  .dark-mode footer {
+    background-color: #341931; }
+
+.light-mode {
+  background-color: #FFFFFF; }
+  .light-mode p {
+    color: #341931; }
+  .light-mode h1 {
+    color: #341931; }
+  .light-mode h2 {
+    color: #341931; }
+  .light-mode h3 {
+    color: #341931; }
+  .light-mode h4 {
+    color: #341931; }
+  .light-mode figcaption {
+    color: #341931; }
+  .light-mode footer {
+    background-color: #FFFFFF; }

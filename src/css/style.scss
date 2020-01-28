@@ -1,3 +1,51 @@
-body{
-    background-color: turquoise;
+$dark-color: #341931;
+$light-color: #FFFFFF;
+.dark-mode {
+  background-color: $dark-color;
+  
+  p{
+    color: $light-color;
+  }
+  h1{
+    color: $light-color;
+  }
+  h2{
+    color: $light-color;
+  }
+  h3{
+    color: $light-color;
+  }
+  h4{
+    color: $light-color;
+  }
+  figcaption{
+    color: $light-color;
+  }
+  footer{
+    background-color: $dark-color;
+  }
+}
+.light-mode {
+  background-color: $light-color;
+  p{
+    color: $dark-color;
+  }
+  h1{
+    color: $dark-color;
+  }
+  h2{
+    color: $dark-color;
+  }
+  h3{
+    color: $dark-color;
+  }
+  h4{
+    color: $dark-color;
+  }
+  figcaption{
+    color: $dark-color;
+  }
+  footer{
+    background-color: $light-color;
+  }
 }

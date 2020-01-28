@@ -15,7 +15,7 @@ fetch('https://accounts.spotify.com/api/token', {
   return response.json();
 }).then(function (data) {
   var accessToken = data.access_token;
-  fetch('https://api.spotify.com/v1/artists?ids=0oSGxfWSnnOXhD2fKuz2Gy,3dBVyJ7JuOMt4GE9607Qin', {
+  fetch('https://api.spotify.com/v1/artists?ids=0oSGxfWSnnOXhD2fKuz2Gy,3dBVyJ7JuOMt4GE9607Qin,7uaIm6Pw7xplS8Dy06V6pT,7dGJo4pcD2V6oG8kP0tJRR,6qqNVTkY8uBg9cP3Jd7DAH', {
     method: "GET",
     headers: {
       "Authorization": "Bearer " + accessToken
