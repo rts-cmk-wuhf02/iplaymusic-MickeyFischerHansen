@@ -32,5 +32,10 @@ main {
 
 .play__section {
   display: flex;
-  justify-content: center;
-  margin: 10%; }
+  justify-content: space-around;
+  margin: 10%;
+  height: 4em;
+  align-items: center; }
+
+.audio {
+  color: blue; }

@@ -17,7 +17,8 @@ fetch('https://accounts.spotify.com/api/token', {
     )
     .then(data=>{
         let accessToken = data.access_token
-        fetch('',{
+        let album = new URLSearchParams(document.location.search).get("album");
+        fetch(`https://api.spotify.com/v1/albums/${album}/tracks?`,{
             method: "GET",
             headers: {
                 "Authorization" : "Bearer " + accessToken
@@ -25,15 +26,24 @@ fetch('https://accounts.spotify.com/api/token', {
         })
         .then(res=> res.json())
         .then(req=>{
-          console.log(req.albums) 
-          req.albums.forEach(element => {
-              console.log(element.images)
-              const templatefeature = document.querySelector('#template-feature');
-              const placer = document.querySelector('.img__wrapper');
-              const clone = templatefeature.content.cloneNode(true)
-                clone.querySelector('.section__img').src = element.images[0].url
+          console.log(req) 
+          req.items.forEach(element => {
+              
+                const albumdeatils = document.querySelector('#template-albumdeatils');
+                const placer = document.querySelector('.main__section');
+                const clone = albumdeatils.content.cloneNode(true)
+                //clone.querySelector('.pølse').src = element.images[0].url
+                clone.querySelector('.playlist_songname').innerText = element.name
+                clone.querySelector('.playlist_artist').innerText = element.artists[0].name
+                clone.querySelector('.playlist_timelength').innerText = millisToMinutesAndSeconds(element.duration_ms)
+               
                 placer.appendChild(clone)
+                
             })
         });
-
     });
+function millisToMinutesAndSeconds(millis) {
+    var minutes = Math.floor(millis / 60000);
+    var seconds = ((millis % 60000) / 1000).toFixed(0);
+    return minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
+}

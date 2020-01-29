@@ -1,9 +1,12 @@
 
-<%- include('../partials/albums-head'); %>
+<%- include('../partials/album-details-head'); %>
 <%- include('../partials/albums-details-header'); %>
 <%- include('../partials/nav'); %>
 <main>
-    <article class="section__wrapper-album">
+    <section class="main__section">
+
+    </section>
+    <!-- <article class="section__wrapper-album">
         <section class="article__section-album">
             <a href="/player">
             <img class="section__img-album" src="/assets/images/feature1.jpg" alt="">
@@ -42,7 +45,22 @@
        
         
     </article>
-    
+     -->
 </main>
-<%- include('../partials/footer'); %>
+
+<template id="template-albumdeatils">
+   <a href="/player"> <figure class="playlist_li">
+       <img class="figure__img" src="/assets/images/Group 422.svg">
+        <div class="div_textbox">
+          <h4 class="playlist_songname"></h4>
+              <h4 class="playlist_artist"></h4>
+          </div>
+          <div class="timelength_box">
+                  <p class="playlist_timelength">3:58</p>
+              </div>
+    </figure>
+</a>
+</template>
+
+<%- include('../partials/albums-details-footer'); %>
 <%- include('../partials/after-footer'); %>

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/albums.css">
+    <link rel="stylesheet" href="/assets/css/album-details.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Document</title>
 </head>
@@ -20,7 +20,10 @@
 <img class="header__albumsdetails" src="/assets/images/feature2.jpg" alt="">
 
 <main>
-    <article class="section__wrapper-album">
+    <section class="main__section">
+
+    </section>
+    <!-- <article class="section__wrapper-album">
         <section class="article__section-album">
             <a href="/player">
             <img class="section__img-album" src="/assets/images/feature1.jpg" alt="">
@@ -59,19 +62,32 @@
        
         
     </article>
-    
+     -->
 </main>
+
+<template id="template-albumdeatils">
+   <a href="/player"> <figure class="playlist_li">
+       <img class="figure__img" src="/assets/images/Group 422.svg">
+        <div class="div_textbox">
+          <h4 class="playlist_songname"></h4>
+              <h4 class="playlist_artist"></h4>
+          </div>
+          <div class="timelength_box">
+                  <p class="playlist_timelength">3:58</p>
+              </div>
+    </figure>
+</a>
+</template>
+
 <footer>
     <a href="/artist"><i class="fas fa-heartbeat"></i></a>
     <a href="/albums"><i class="fas fa-microphone-alt"></i></a>
 
     <a href="/index.html"><i class="fas fa-music"></i> </a>
     <i class="fas fa-adjust" id="lightdark" onclick="toggleDarkLight()"></i>
-   <!-- <a href="/categories"><i class="fas fa-adjust"></i></a> -->
     <a href="/playlist"><i class="fas fa-cog"></i></a>
-    
-</footer>
-<script src="/assets/Javascript/featured.js"></script>
+    <script src="/assets/Javascript/album-details.js"></script>
     <script src="/assets/Javascript/lightdark.js"></script>
+</footer>
 </body>
 </html>

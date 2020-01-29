@@ -1,5 +1,7 @@
 "use strict";
 
+var sku = new URLSearchParams(document.location.search).get('albums');
+console.log(sku);
 var ClientID = "726f1993fb0348448a3e99ce80eca1a4";
 var ClientSecret = "11c665492c43438f896dd25ffdb3222c";
 var key = btoa(ClientID + ":" + ClientSecret);
@@ -50,6 +52,7 @@ fetch('https://accounts.spotify.com/api/token', {
       clone.querySelector(".section__div-h3").innerText = element.name;
       clone.querySelector(".section__div-p").innerText = element.artists[0].name;
       clone.querySelector(".section__div-p2").innerText = element.total_tracks;
+      clone.querySelector(".a-tag").href = "/albums-details?album=".concat(element.id);
       placer2.appendChild(clone);
     });
   });
