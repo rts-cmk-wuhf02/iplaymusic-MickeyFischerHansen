@@ -33,6 +33,7 @@ fetch('https://accounts.spotify.com/api/token', {
               const placer = document.querySelector('.main_section');
               const clone = templatefeature.content.cloneNode(true)
                 clone.querySelector('.section__img').src = element.images[0].url
+                clone.querySelector(".a-tag").href = `/albums-details?album=${element.id}`
                 placer.appendChild(clone)
             
           });

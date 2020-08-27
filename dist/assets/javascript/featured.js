@@ -30,6 +30,7 @@ fetch('https://accounts.spotify.com/api/token', {
       var placer = document.querySelector('.main_section');
       var clone = templatefeature.content.cloneNode(true);
       clone.querySelector('.section__img').src = element.images[0].url;
+      clone.querySelector(".a-tag").href = "/albums-details?album=".concat(element.id);
       placer.appendChild(clone);
     }); //    const featuredmain = document.querySelector('.featuredmain')
     //    featuredmain.innerHTML = `

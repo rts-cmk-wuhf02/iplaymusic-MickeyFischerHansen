@@ -34,3 +34,10 @@ fetch('https://accounts.spotify.com/api/token', {
 //   console.log(element)
 //   element.forEach(item=>{
 //       console.log(item)
+if('serviceworker' in navigator) {
+  window.addEventListener('load', function(){
+    this.navigator.serviceWorker.register('/sw.js').then(function(registration){
+      console.log('serviceworker registration successful with scope', registration)
+    })
+  })
+}

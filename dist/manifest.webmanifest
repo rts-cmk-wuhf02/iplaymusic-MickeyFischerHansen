@@ -1,0 +1,21 @@
+{
+    "name": "Iplay Music",
+    "short_name": "Iplay",
+    "start_url": "/index.html",
+    "background_color": "#123455",
+    "display": "minimal-ui",
+    "icons": [
+        {
+          "src": "/assets/images/mario.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        },
+        {
+          "src": "/assets/images/marioios.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+      ],
+      "theme_color": "#459375",
+      "orientation": "portrait-primary"
+}
